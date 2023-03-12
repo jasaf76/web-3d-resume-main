@@ -44,8 +44,8 @@ const CV = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>For employers</p>
-          <h2 className={styles.sectionHeadText}>My CV.</h2>
+          <p className={styles.sectionSubText}>Für Interessenten</p>
+          <h2 className={styles.sectionHeadText}>Mein CV.</h2>
         </motion.div>
       </div>
       <div
@@ -64,7 +64,7 @@ const CV = () => {
 
             <a href={CVDoc} download>
               <button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px]">
-                Download CV
+                Runterladen CV
               </button>
             </a>
           </div>

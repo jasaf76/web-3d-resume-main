@@ -36,6 +36,8 @@ import {
   carednewhope_blog,
   flash_sucher,
   siemens,
+  ich,
+  roboto2,
 } from "../assets";
 
 export const CVDuncan = CV_Duncan
@@ -191,13 +193,13 @@ const experiences = [
 
 const myWords = [
   {
-    text: "Here you can download my СV by clicking on Download button. I will be glad to our cooperation.",
-    name: "Ilya Aleksin",
+    text: "Hier können Sie mein СV herunterladen, indem Sie auf die Schaltfläche Download klicken. Ich werde froh sein,  über unsere Zusammenarbeit, sollten Sie sich für meine Expertise entscheiden",
+    name: "José Antonio Aparicio Gallego",
     designation: "The owner",
-    company: "ILALEX",
-    image: me,
+    company: "KAGIFZU",
+    image: ich,
   },
-]
+];
 
 const projects = [
   {
