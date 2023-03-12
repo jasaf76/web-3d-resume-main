@@ -21,7 +21,7 @@ const Hero = () => {
             Ich bin <span className="text-amber-500">José</span>
           </h1>
           <p className={`${styles.heroSubText} mt-[20px] text-amber-500`}>
-            Ich entwickl<span className="text-amber-500">e</span>
+            Ich entwickle
             <span className="mx-2"> </span>
             <span className="text-lime-700">3D-Visuals</span>
             <br className="sm:block hidden" />

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom"
-
+import lottie from "lottie-web";
 import { styles } from "../styles"
 import { navLinks } from "../constants"
 import { logo, menu, close,roboto2 } from "../assets"
-
+import Lottie from "lottie-react";
+import robot from "../assets/robot.json";
 const Navbar = () => {
   const [active, setActive] = useState("")
   const [toggle, setToggle] = useState(false)
@@ -25,6 +26,8 @@ const Navbar = () => {
    return () => window.removeEventListener("scroll", handleScroll);
  }, []);
 
+
+
   return (
     <nav
       className={`${
@@ -32,7 +35,10 @@ const Navbar = () => {
       } w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div
+        className="w-full flex justify-between items-center max-w-7xl mx-auto"
+>
+        <Lottie animationData={robot} style={{ height: 80, width: 80 }} />
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -40,11 +46,6 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          <img
-            src={roboto2}
-            alt="logo"
-            className="w-[7.5rem] h-14 object-contain"
-          />
           <p className="text-white text-[21px] font-bold cursor-pointer flex ">
             José &nbsp;
             <span className="sm:block hidden"> | Kagifzu & Team</span>
