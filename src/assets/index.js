@@ -37,8 +37,15 @@ import project9 from "./projects/project9.jpg"
 import project10 from "./projects/project10.jpg"
 import project11 from "./projects/project11.jpg"
 import project12 from "./projects/project12.jpg"
-import roboto2 from "./roboto2.gif"
+import marketplace from "./marketplace.png";
+import carednewhope_blog from "./carednewhope_blog.png";
+import flash_sucher from "./flash_sucher.png";
+import roboto2 from "./roboto2.gif";
+import siemens from "./siemens.jpg";
+
 import ich from "./ich.png"
+import carednewhope from "./carednewhope.png"
+
 
 export {
   me,
@@ -77,6 +84,11 @@ export {
   project10,
   project11,
   project12,
+  carednewhope,
+  marketplace,
+  carednewhope_blog,
+  flash_sucher,
   roboto2,
-  ich
-}
+  siemens,
+  ich,
+};

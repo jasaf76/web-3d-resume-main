@@ -31,7 +31,12 @@ import {
   project12,
   me,
   CV_Duncan,
-} from "../assets"
+  carednewhope,
+  marketplace,
+  carednewhope_blog,
+  flash_sucher,
+  siemens,
+} from "../assets";
 
 export const CVDuncan = CV_Duncan
 
@@ -196,190 +201,59 @@ const myWords = [
 
 const projects = [
   {
-    name: "Yummio",
+    name: "Carednewhope",
     description:
-      "A small cooking React app using a third party API. There is a search in the recipe database and 4 ready-made presets.",
+      "Es handelt sich um ein temporäres Unterbringungsprogramm für Menschen mit psychischen Erkrankungen, die Unterstützung und Betreuung benötigen. Das Projekt beinhaltet die Entwicklung eines sicheren und strukturierten Umfelds, sowie die Möglichkeit, an therapeutischen und Freizeitaktivitäten teilzunehmen. Die Umsetzung dieses Projekts erforderte meine Fähigkeit, ein sicheres und einladendes Umfeld zu schaffen, in dem die Bedürfnisse der Teilnehmer berücksichtigt werden. Meine Erfahrung im Bereich der psychischen Gesundheit und mein Wissen in der Projektentwicklung haben dazu beigetragen, dass dieses Projekt erfolgreich umgesetzt wurde. Es ist ein gutes Beispiel für meine Fähigkeit, komplexe Projekte effektiv zu managen und innovative Lösungen zu entwickeln.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "rest_api",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: project1,
-    source_code_link: "https://github.com/jean-louis1776/recipe-app-react",
-    demo_link: "https://yummio.netlify.app/",
+    image: carednewhope,
+    source_code_link: "https://carednewhope.com/",
+    website_link: "https://carednewhope.com",
   },
   {
-    name: "Parallax Gallery",
+    name: "NFT Marketplace",
     description:
-      "A small gallery project. Actively used CSS animation, blur, parallax and gradient effects, as well as the SwiperJS library.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project2,
-    source_code_link: "https://github.com/jean-louis1776/Parallax-Gallery",
-    demo_link: "https://jean-louis1776.github.io/Parallax-Gallery/",
-  },
-  {
-    name: "Elecar",
-    description:
-      "Responsive website using HTML CSS & JavaScript. Contains animations when scrolling, smooth scrolling in each section.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link:
-      "https://github.com/jean-louis1776/responsive-car-website",
-    demo_link: "https://jean-louis1776.github.io/responsive-car-website/",
-  },
-  {
-    name: "Beautiful World",
-    description:
-      "First experience of creating a website with 3D scrolling. Third party libraries were not used. Compatible with all devices.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project4,
-    source_code_link: "https://github.com/jean-louis1776/3d-scroll-site",
-    demo_link: "https://jean-louis1776.github.io/3d-scroll-site/",
-  },
-  {
-    name: "Assassin's Mantle",
-    description:
-      "A tricky way to create a 3D effect for a 2D picture. The website is designed as a gallery. Bootstrap and SwiperJS libraries were used.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/jean-louis1776/assassin-hoodie",
-    demo_link: "https://jean-louis1776.github.io/assassin-hoodie/",
-  },
-  {
-    name: "Coffee.",
-    description:
-      "Landing page for a fictional coffee shop. Full responsiveness. CSS animations and JavaScript library MixItUp were used.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link:
-      "https://github.com/jean-louis1776/responsive-coffee-website",
-    demo_link: "https://jean-louis1776.github.io/responsive-coffee-website/",
-  },
-  {
-    name: "2048",
-    description:
-      "Game 2048 using React. Romain Cousin - it's his design. Logic - Ivan Vergiliev. His logic is very easy to follow.",
+      "OasisMarketplace ist ein NFT-Marktplatz, der es Nutzern ermöglicht, digitale Sammlerstücke, Kunstwerke und andere Kryptovermögenswerte zu kaufen und zu verkaufen. Der Marktplatz ist auf Benutzerfreundlichkeit und Sicherheit ausgelegt und bietet eine breite Palette von Funktionen, darunter Auktionen, Handel, Sammlungen und Portfolios. OasisMarketplace nutzt die Blockchain-Technologie, um die Transparenz und Unveränderlichkeit von Transaktionen zu gewährleisten und den Nutzern eine sichere und zuverlässige Plattform zu bieten, um digitale Assets zu handeln.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
         name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: project7,
-    source_code_link: "https://github.com/jean-louis1776/2048-animated",
-    demo_link: "https://2048-animated-aleksin.netlify.app/",
+    image: marketplace,
+    source_code_link: "https://capable-sunburst-3cb379.netlify.app/",
   },
   {
-    name: "Google Clone",
+    name: "BWS - Blog Website",
     description:
-      "Google search engine clone. API official. The frontend part of the application was written using the NextJS React framework.",
+      "Die Drogenkriminalität ist ein ernstes Problem, das die Gesellschaft in vielerlei Hinsicht beeinflusst, insbesondere wenn es um Feiern, Events und die Drogenszene geht. In diesem Blogbeitrag werde ich die Auswirkungen von Drogen auf die Kriminalität und die Gesellschaft im Allgemeinen untersuchen. Wir werden uns auch mit der Drogenpolitik in verschiedenen Ländern befassen und diskutieren, wie sie sich auf die Kriminalitätsrate und die öffentliche Wahrnehmung von Drogen auswirkt. Darüber hinaus werden wir uns mit der Drogenszene auseinandersetzen und ihre Rolle in der Gesellschaft und auf Veranstaltungen untersuchen. Ziel ist es, ein umfassendes Verständnis für die verschiedenen Aspekte der Drogenkriminalität und ihre Auswirkungen auf die Gesellschaft zu vermitteln.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "rest_api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project8,
-    source_code_link: "https://github.com/jean-louis1776/google-clone",
-    demo_link: "https://google-clone-ilalex.vercel.app/",
-  },
-  {
-    name: "Holux",
-    description:
-      "Beautiful landing page for real estate services. Includes a dark and light mode. Used JS libraries - ScrollReveal and SwiperJS.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
+        name: "supabase",
         color: "green-text-gradient",
       },
       {
@@ -387,76 +261,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: project9,
-    source_code_link: "https://github.com/jean-louis1776/holux-responsive",
-    demo_link: "https://holux-responsive.vercel.app/",
+    image: carednewhope_blog,
+    source_code_link: "https://cared-new-hope.org/post/gedenktag",
   },
   {
-    name: "GeekTube",
+    name: "Flash Sucher",
     description:
-      "Graduation Fullstack project at GeekBrains University. The project was created in a team. Simple video hosting (like YouTube).",
+      "Diese App, die mit Flutter entwickelt wurde und NestJS als Backend nutzt, ist eine umfassende Plattform, die es Kunden ermöglicht, Produkte von Geschäften zu kaufen, während Besitzer ihr Geschäft und Produkte einstellen und verwalten können. Die App unterstützt auch Fahrer, die für die Lieferung der Produkte zuständig sind. Insgesamt gibt es vier Rollen in der App: Kunde, Administrator, Besitzer und Fahrer, Die Verwendung von MySQL und Progress als Datenbanken stellt sicher, dass die App leistungsfähig und skalierbar ist und dass Benutzerdaten sicher und zuverlässig gespeichert werden.Die Google Maps API wird verwendet, um die Lieferung in Echtzeit zu verfolgen und sicherzustellen, dass die Kunden immer über den Status ihrer Bestellung informiert sind.,Die App ist benutzerfreundlich gestaltet und bietet eine einfache und intuitive Benutzeroberfläche, die es Kunden, Besitzern und Fahrern gleichermaßen leicht macht, ihre Aufgaben zu erledigen.Diese App ist ein hervorragendes Beispiel für meine Fähigkeit, komplexe Projekte zu planen, zu entwerfen und zu entwickeln und zeigt, wie ich verschiedene Technologien und Tools effektiv einsetzen kann, um eine nahtlose und benutzerfreundliche Erfahrung zu schaffen.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "progress",
         color: "green-text-gradient",
       },
       {
-        name: "sql",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: project10,
-    source_code_link: "https://github.com/jean-louis1776/GBTube",
-    demo_link: "http://www.git-tube.ru/",
+    image: flash_sucher,
+    source_code_link: "https://carednewhope.com/",
+    website_link: "https://carednewhope.com",
   },
-  {
-    name: "The Witcher",
-    description:
-      "Parallax gallery. Was used a custom library for creating particles, as well as the ScrollReveal and SwiperJS libraries.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project11,
-    source_code_link: "https://github.com/jean-louis1776/witcher-parallax",
-    demo_link: "https://witcher-parallax.vercel.app/",
-  },
-  {
-    name: "Fairy Forest",
-    description:
-      "Parallax and neon light effect in this demo. To create this effect, the GSAP, ScrollSmoother and ScrollTrigger libraries were used.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project12,
-    source_code_link: "https://github.com/jean-louis1776/forest-parallax",
-    demo_link: "https://forest-parallax-ilalex.vercel.app/",
-  },
-]
+];
 
 export { services, technologies, experiences, myWords, projects }

@@ -30,9 +30,11 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>My tools</p>
+        <p className={`${styles.sectionSubText} text-center`}>
+          Meine Ressourcen
+        </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Technologies.
+          Technologies
         </h2>
       </motion.div>
 
@@ -42,7 +44,7 @@ const Tech = () => {
         ))}
       </div>
     </>
-  )
+  );
 }
 
 export default SectionWrapper(Tech, "")

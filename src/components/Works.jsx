@@ -1,12 +1,12 @@
-import React from "react"
-import Tilt from "react-tilt"
-import { motion } from "framer-motion"
+import React from "react";
+import Tilt from "react-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from "../styles"
-import { github } from "../assets"
-import { SectionWrapper } from "../hoc"
-import { myGithub, projects } from "../constants"
-import { fadeIn, textVariant } from "../utils/motion"
+import { styles } from "../styles";
+import { github } from "../assets";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -15,7 +15,6 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -25,8 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -37,8 +35,7 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img
                 src={github}
                 alt="source code"
@@ -48,10 +45,7 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div
-          className="mt-5 cursor-pointer"
-          onClick={() => window.open(demo_link, "_blank")}
-        >
+        <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
@@ -60,68 +54,63 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+              className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
         </div>
       </Tilt>
     </motion.div>
-  )
-}
-
+  );
+};
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>Meine Arbeit</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projekten.</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following pet-projects showcases my skills and experience. Each
-          project is briefly described with links to code repositories and live
-          demos in it.
+          className="mt-3 text-secondary text-[17px]  max-w-5xl leading-[30px]">
+          Ich bin stolz darauf, Ihnen eine Auswahl meiner umfangreichen und
+          ansprechenden Projekte präsentieren zu können, die meine Fähigkeiten
+          und Erfahrungen als Entwickler veranschaulichen. Jedes Projekt ist
+          eine repräsentative Arbeit mit realen Beispielen und ist kurz
+          beschrieben und mit Links zu Code-Repositorien und Live-Demos
+          versehen. Eines meiner bemerkenswertesten Projekte ist eine
+          React.js-Webanwendung für ein Online-Shop-Unternehmen, die es Kunden
+          ermöglicht, Produkte online zu kaufen. Ich war für die Entwicklung und
+          Implementierung der Front-End-Funktionen verantwortlich, darunter die
+          Implementierung responsiven Designs, die Sicherstellung der
+          Browserkompatibilität und die Integration von Zahlungssystemen. Dieses
+          Projekt ist eine hervorragende Demonstration meiner Fähigkeit,
+          komplexe Probleme zu lösen und verschiedene Technologien wie React.js
+          , Flutter(Dart), Python oder PHP zu verwenden. Ein weiteres Projekt,
+          an dem ich gearbeitet habe, ist eine Flutter-Mobile-App für eine
+          digitale Marketingagentur. Zu meinen Aufgaben gehörten die Entwicklung
+          ansprechender Designs, die Implementierung von Funktionen für
+          Push-Benachrichtigungen und die Integration von
+          Social-Media-Plattformen. Das Projekt zeigt meine Fähigkeit, effektiv
+          mit funktionsübergreifenden Teams zusammenzuarbeiten und komplexe
+          Projekte effektiv zu verwalten. Diese Projekte sind nur einige
+          Beispiele für meine umfangreichen und schönen Projekte, die meine
+          Fähigkeiten als Entwickler demonstrieren. Ich bin stolz darauf,
+          komplexe Probleme zu lösen und effektiv mit funktionsübergreifenden
+          Teams zusammenzuarbeiten, um Produkte von höchster Qualität zu
+          erstellen.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7 justify-center">
+      <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-
-      <div className="w-full flex flex-col items-center justify-center">
-        <motion.p
-          variants={textVariant()}
-          className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center"
-        >
-          Did you like it? This and much more you can find in my GitHub at the
-          link below.
-        </motion.p>
-
-        <div
-          className="green-pink-gradient p-[1px] rounded-full flex justify-center items-center cursor-pointer mt-4"
-          onClick={() => window.open(myGithub, "_blank")}
-        >
-          <div className="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
-            <img
-              src={github}
-              alt="source code"
-              className="w-[40px] h-[40px] object-contain"
-            />
-
-            <p className="text-[21px]">GitHub</p>
-          </div>
-        </div>
-      </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works, "projects")
+export default SectionWrapper(Works, "");
