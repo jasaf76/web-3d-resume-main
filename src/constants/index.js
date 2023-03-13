@@ -17,19 +17,7 @@ import {
   ilalex,
   nextjsLogo,
   expo,
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
-  project7,
-  project8,
-  project9,
-  project10,
-  project11,
-  project12,
-  me,
+
   CV_Duncan,
   carednewhope,
   marketplace,
@@ -222,7 +210,7 @@ const projects = [
     ],
     image: carednewhope,
     source_code_link: "https://carednewhope.com/",
-    website_link: "https://carednewhope.com",
+
   },
   {
     name: "NFT Marketplace",
@@ -286,7 +274,6 @@ const projects = [
     ],
     image: flash_sucher,
     source_code_link: "https://carednewhope.com/",
-    website_link: "https://carednewhope.com",
   },
 ];
 

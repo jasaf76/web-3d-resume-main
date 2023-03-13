@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -17,15 +16,13 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[230px]">
+    <Tilt
+   
+      className="bg-tertiary p-5 rounded-2xl sm:w-[250px] w-full">
+      <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)}>
+        <div
+          className="relative w-full h-[230px]"
+          options={{ max: 45, scale: 1, speed: 450 }}>
           <img
             src={image}
             alt="project_image"
@@ -59,22 +56,20 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </motion.div>
+    </Tilt>
   );
 };
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Meine Arbeit</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projekten.</h2>
+      <motion.div>
+        <p className={styles.sectionSubText}>Meine Arbeit</p>
+        <h2 className={styles.sectionHeadText}>Projekten.</h2>
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px]  max-w-5xl leading-[30px]">
+        <motion.p className="mt-3 text-secondary text-[17px]  max-w-5xl leading-[30px]">
           Ich bin stolz darauf, Ihnen eine Auswahl meiner umfangreichen und
           ansprechenden Projekte präsentieren zu können, die meine Fähigkeiten
           und Erfahrungen als Entwickler veranschaulichen. Jedes Projekt ist
@@ -113,4 +108,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");
